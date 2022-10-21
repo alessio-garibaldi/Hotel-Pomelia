@@ -1,57 +1,118 @@
 * {
     font-family: 'Mali', cursive;
+    margin: 0;
+    padding: 0;
 }
 
 @media all and (orientation: portrait) {
+    header {
+        .social-icons {
+            display:none !important;
+        }
 
-    .social-icons {
-        display:none !important;
+        .call-to-action {
+            margin: auto !important;
+        }
     }
 
-    .call-to-action {
-        margin: auto !important;
-    }
+    nav {
+        height: 13vh !important;
+        align-items: center !important;
 
+        .logo {
+            padding-left: 4vw !important;
+
+        }        
+        
+        .navbar-list {
+            margin-top: 12vh;
+            width: 60vw !important;
+        }
+    }
 }  
 
 /* HEADER */
 
 header {
 
+    position: absolute;
+    z-index: 99;
     width: 50%;
     height: 10vh;
-    margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 0 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #435435bb;
 
     .social-icons {
         width: fit-content;
 
         img {
-            width: 5vh;
+            width: 5vw;
+            max-width: 45px;
             margin-left: 3vh;
         }
     }
 
     .call-to-action {
-        background-color: #4FBE9F;
-        border-radius: 15%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 3vh;
-        cursor: pointer;
-        
+        margin-right: 3vh;    
 
         a {
-            color: white;
+            border-radius: 15px;
+            background-color: #80D188;
+            color: #E5F7AA;
             height: 75%;
-            margin: 1vh 3vh;
+            padding: 1vh 3vh;
             text-decoration: none;
             font-weight: bold;
+        }
+
+        a:hover {
+            background-color:#E5F7AA;
+            color: #80D188;
         }
     }
 }
 
+nav {
+    position: relative;
+    background-color: #c9ebc28e;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+    padding-bottom: 2vh;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    height: 17vh;
+
+    .logo-container {
+
+        width: 18vw;
+        padding-left: 2vw;
+        .logo {
+            width: 15vw;
+            max-width: 90px;
+        }
+    }
+
+    .navbar-list {
+        display: flex;
+        width: 50vw;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-bottom: 1vh;
+    }
+
+    .certificate {
+        width: 18vw;
+        max-width: 175px;
+        padding-right: 2vw;
+    }
+}
