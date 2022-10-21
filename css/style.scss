@@ -1,0 +1,57 @@
+* {
+    font-family: 'Mali', cursive;
+}
+
+@media all and (orientation: portrait) {
+
+    .social-icons {
+        display:none !important;
+    }
+
+    .call-to-action {
+        margin: auto !important;
+    }
+
+}  
+
+/* HEADER */
+
+header {
+
+    width: 50%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+
+    .social-icons {
+        width: fit-content;
+
+        img {
+            width: 5vh;
+            margin-left: 3vh;
+        }
+    }
+
+    .call-to-action {
+        background-color: #4FBE9F;
+        border-radius: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 3vh;
+        cursor: pointer;
+        
+
+        a {
+            color: white;
+            height: 75%;
+            margin: 1vh 3vh;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+}
+
