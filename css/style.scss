@@ -15,21 +15,59 @@
         }
     }
 
-    nav {
-        height: 13vh !important;
-        align-items: center !important;
+    nav {   
+        height: 11vh !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
 
-        .logo {
-            padding-left: 4vw !important;
+        .logo-container {
+            width: 18vw !important;
+            
+            .logo {
+                width: 14vw !important;
+            }
+        }
 
-        }        
-        
         .navbar-list {
-            margin-top: 12vh;
-            width: 60vw !important;
+        display: none !important;
+        }
+
+        .certificate {
+            width: 18vw !important;
         }
     }
-}  
+
+    nav.smallscreen {
+        background-color: #c9ebc28e;
+        height: 2vh !important;
+        display: block !important;
+        border-bottom-left-radius: 15px !important;
+        border-bottom-right-radius: 15px !important;
+        
+        .navbar-list-small {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            margin-bottom: 1vh !important;
+
+            a {
+                color: #435435;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+
+            a:hover {
+                color: #91b475;
+            }
+
+        }
+    }
+
+}
+    
+
+
+
 
 /* HEADER */
 
@@ -64,11 +102,12 @@ header {
         margin-right: 3vh;    
 
         a {
+            text-align: cen;
             border-radius: 15px;
             background-color: #80D188;
             color: #E5F7AA;
             height: 75%;
-            padding: 1vh 3vh;
+            padding: 0.5vh 2.8vh;
             text-decoration: none;
             font-weight: bold;
         }
@@ -84,7 +123,7 @@ nav {
     position: relative;
     background-color: #c9ebc28e;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     display: flex;
     padding-bottom: 2vh;
     border-bottom-left-radius: 15px;
@@ -93,26 +132,41 @@ nav {
     height: 17vh;
 
     .logo-container {
-
-        width: 18vw;
+        width: 13vw;
         padding-left: 2vw;
+        padding-top: 2vh;
+
         .logo {
-            width: 15vw;
-            max-width: 90px;
+            width: 7vw;
         }
     }
 
     .navbar-list {
+        padding-top: 15vh;
         display: flex;
         width: 50vw;
         justify-content: space-between;
         list-style-type: none;
         margin-bottom: 1vh;
+
+        a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: #435435;
+        }
+
+        a:hover {
+            color: #91b475;
+        }
     }
 
     .certificate {
-        width: 18vw;
-        max-width: 175px;
+        width: 13vw;
         padding-right: 2vw;
+        padding-top: 2vh;
     }
+}
+
+nav.smallscreen {
+    display: none;
 }

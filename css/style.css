@@ -12,15 +12,42 @@
     margin: auto !important;
   }
   nav {
-    height: 13vh !important;
-    align-items: center !important;
+    height: 11vh !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
   }
-  nav .logo {
-    padding-left: 4vw !important;
+  nav .logo-container {
+    width: 18vw !important;
+  }
+  nav .logo-container .logo {
+    width: 14vw !important;
   }
   nav .navbar-list {
-    margin-top: 12vh;
-    width: 60vw !important;
+    display: none !important;
+  }
+  nav .certificate {
+    width: 18vw !important;
+  }
+  nav.smallscreen {
+    background-color: rgba(201, 235, 194, 0.5568627451);
+    height: 2vh !important;
+    display: block !important;
+    border-bottom-left-radius: 15px !important;
+    border-bottom-right-radius: 15px !important;
+  }
+  nav.smallscreen .navbar-list-small {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-bottom: 1vh !important;
+  }
+  nav.smallscreen .navbar-list-small a {
+    color: #435435;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  nav.smallscreen .navbar-list-small a:hover {
+    color: #91b475;
   }
 }
 /* HEADER */
@@ -54,11 +81,12 @@ header .call-to-action {
   margin-right: 3vh;
 }
 header .call-to-action a {
+  text-align: cen;
   border-radius: 15px;
   background-color: #80D188;
   color: #E5F7AA;
   height: 75%;
-  padding: 1vh 3vh;
+  padding: 0.5vh 2.8vh;
   text-decoration: none;
   font-weight: bold;
 }
@@ -71,7 +99,7 @@ nav {
   position: relative;
   background-color: rgba(201, 235, 194, 0.5568627451);
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   display: flex;
   padding-bottom: 2vh;
   border-bottom-left-radius: 15px;
@@ -80,22 +108,35 @@ nav {
   height: 17vh;
 }
 nav .logo-container {
-  width: 18vw;
+  width: 13vw;
   padding-left: 2vw;
+  padding-top: 2vh;
 }
 nav .logo-container .logo {
-  width: 15vw;
-  max-width: 90px;
+  width: 7vw;
 }
 nav .navbar-list {
+  padding-top: 15vh;
   display: flex;
   width: 50vw;
   justify-content: space-between;
   list-style-type: none;
   margin-bottom: 1vh;
 }
+nav .navbar-list a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #435435;
+}
+nav .navbar-list a:hover {
+  color: #91b475;
+}
 nav .certificate {
-  width: 18vw;
-  max-width: 175px;
+  width: 13vw;
   padding-right: 2vw;
+  padding-top: 2vh;
+}
+
+nav.smallscreen {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
