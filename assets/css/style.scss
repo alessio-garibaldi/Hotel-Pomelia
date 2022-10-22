@@ -2,11 +2,12 @@
     font-family: 'Mali', cursive;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth !important;
 }
 
-// body {
-//     background-color: #feffdd;
-// }
+body {
+    background-color: #fffeda;
+}
 
 @media all and (orientation: portrait) {
     header {
@@ -27,9 +28,12 @@
 
         .logo-container {
             width: 18vw !important;
+            padding-bottom: 10vh !important;
             
             .logo {
-                width: 14vw !important;
+                z-index: 999;
+                width: 12vw !important;
+                min-width: 40px !important;
             }
         }
 
@@ -44,6 +48,7 @@
 
     nav.smallscreen {
         background-color: #c9ebc28e;
+        width: 100% !important;
         height: 2vh !important;
         display: block !important;
         border-bottom-left-radius: 15px !important;
@@ -72,8 +77,120 @@
         }
     }
 
-}
+
+    /* HERO SECTION */
+    #hero-section {
+
+        .hero-text {
+            width: 70vw !important;
+            
+            h1 {
+                font-size: 4rem !important;
+            }
+        }
+    }
+
+
+    /* FAMIGLIA */
+
+    #famiglia {
+        height: fit-content !important;
+        background-image: url("../img/ragusa-small.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .wrapper {
+            display: flex !important;
+            width: 100% !important;
+            height: 200vh !important;
+            flex-direction: column !important;
+
+            .mission {
+                display: flex;
+                height: 90vh;
+                width: 100% !important;
+                margin: 15vh 0px 5vh 0px !important;
     
+                p {
+                    width: 40vw !important;
+                    
+                }
+    
+                img {
+                    height: 50vh;
+                    width: 40vw;
+                    
+                }
+            }
+    
+            .chi-siamo {
+                height: 80vh;
+                width: 100% !important;                
+                
+                img {
+                    height: 50vh;
+                    width: 40vw;
+                    
+                }
+    
+                p {
+                    width: 40vw !important;
+                    
+                }
+            }
+        }
+
+        .rooms-ahead {
+            margin: 10vh auto 10vh auto;
+            padding-bottom: 20vh;
+        }
+    }
+
+
+
+    /* CAMERE */
+    #camere {
+
+        .struttura,
+        .biancheria {
+            padding-top: 0vh !important;
+            width: 90vw;
+        }
+
+        .camera {
+            width: 90vw !important;
+            flex-direction: column;
+            align-items: center;
+            text-align: justify;
+
+            img {
+                width: 60vw !important;
+                margin-bottom: 2vh;
+            }
+
+            div {
+                width: 60vw !important;
+
+                h3 {
+                    text-align: center;
+                    margin-bottom: 2vh;
+                }
+                p {
+                    width: 100%
+                }
+            }
+        }
+
+        .camera.doppia {
+            flex-direction: column-reverse !important;
+            text-align: justify !important;
+        }
+    }
+    
+}
+
+
+
 
 
 /* MAIN PAGE */
@@ -88,9 +205,9 @@
 
     header {
 
-        position: fixed;
+        position: fixed !important;
         z-index: 99;
-        width: 50%;
+        width: 50% !important;
         height: 10vh;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
@@ -136,6 +253,7 @@
         }
     }
 
+
     nav {
         position: relative;
         background-color: #93c961c1;
@@ -154,9 +272,13 @@
             width: 13vw;
             padding-left: 2vw;
             padding-top: 2vh;
+            padding-bottom: 12vh;
 
             .logo {
-                width: 7vw;
+                width: 6vw;
+                min-width: 80px;
+                position: fixed;
+                
             }
         }
 
@@ -187,9 +309,11 @@
         }
     }
 
+
     nav.smallscreen {
         display: none;
     }
+
 
 
 
@@ -207,7 +331,7 @@
         .hero-text {
             padding: 3vh 5vw 5vh 5vw;
             border-radius: 25px;
-            width: 40%;
+            width: 40vw;
             height: fit-content;
             display: flex;
             flex-direction: column;
@@ -223,6 +347,8 @@
             }
         }
     }
+
+
 
     .go-ahead {
 
@@ -245,40 +371,283 @@
         }
     }
 
+}
 
 
-    /* FAMIGLIA */
 
-    #famiglia {
-        width: 100%;
-        height: 300px !important;
-        background: #000;
 
-        .wrapper {
-            display: grid;
-            grid-template-columns: 50% 50%;
+/* FAMIGLIA */
 
-            .mission {
-                float: left;
-                width: 50%;
-                height: 100vh;
+#famiglia {
+    width: 100%;
+    height: 120vh;
+    background-image: url("../img/ragusa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 
-                p {
-                    height: 50vh;
-                }
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
+        height: 90vh;
+        margin-top: 10vh;
+
+        .mission {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+
+            p {
+                text-align: end;
+                margin: 0 15px;
+                width: 15vw;
+                color: #435435;
+                font-weight: 600;
+                font-size: 1.1rem;
+                
             }
 
-            .chi-siamo {
-                background-color: #fff;
-                float: right;
-                width: 50%;
-                height: 100vh;
+            img {
+                height: 60vh;
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+                
+            }
+        }
 
-                p {
-                    height: 50vh;
-                }
+        .chi-siamo {
+            height: 90vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            
+            img {
+                height: 60vh;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                
+            }
+
+            p {
+                width: 15vw;
+                margin: 0 15px;
+                color: #435435;
+                font-weight: 600;
+                font-size: 1.1rem;
+                
             }
         }
     }
 
+
+    .benefit {
+        width: 80vw;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 10vh;
+        color: #435435;
+        font-weight: 600;
+        font-size: 1.1rem;
+
+        a {
+            text-decoration: none;
+            color: #435435;
+        }
+
+        a:hover {
+            color: #7d9e65;
+            
+        }
+    }
+
+
+    .rooms-ahead {
+
+        display: flex;
+        justify-content: center;
+        
+        a {
+            text-align: center;
+            border-radius: 15px;
+            background-color: #80d188c5;
+            color: #E5F7AA;
+            padding: 0.5vh 2.8vh;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            background-color:#e5f7aac4;
+            color: #435435;
+        }
+    }
+}
+
+
+
+/* CAMERE */
+
+#camere {
+    background-image: url("../img/lemon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .struttura,
+    .biancheria {
+        width: 80vw;
+        text-align: center;
+        margin:auto;
+        margin-top: 10vh;
+        padding-top: 10vh;
+        color: #435435;
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+
+    .biancheria {
+        padding-bottom: 10vh;
+    }
+
+    .camera {
+        width: 70vw;
+        display: flex;
+        margin-top: 20vh;
+        align-items: center;
+    
+        img {
+            width: 30vw;
+            border-radius: 15px;
+        }
+
+        div {
+            width: 30vw;
+            padding-left: 2vw;
+            color: #435435;
+        }
+    }
+
+    .camera.doppia {
+        text-align: end;
+
+        div {
+            padding-right: 2vw;
+        }
+    }
+    
+}
+
+.servizi-ahead {
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8vh;
+    
+    a {
+        text-align: center;
+        border-radius: 15px;
+        background-color: #80d188c5;
+        color: #E5F7AA;
+        padding: 0.5vh 2.8vh;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    a:hover {
+        background-color:#e5f7aac4;
+        color: #435435;
+    }
+}
+
+
+
+/* SERVIZI */
+#servizi {
+
+    .intro-servizi {
+        text-align: center;
+        padding-top: 15vh;
+        color: #435435;
+
+    }
+
+    .container-servizi{
+        margin-top: 10vh;
+        width: 100%;
+        height: 70vh !important;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+
+        div {
+            width: 20vw;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15vh;
+            color: #435435;
+
+            img {
+                width: 90%;
+                border-radius: 15px;
+            }
+
+            h4 {
+                width: 90%;
+                padding-top: 2vh;
+                text-align: center;
+            }
+        }
+    }
+}
+
+#final-call-to-action {
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: #435435;
+
+        h2 {
+            padding-bottom: 3vh;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            padding-bottom: 5vh;
+            font-size:1.3rem;
+        }
+
+        h2:hover {
+            font-size: 1.7rem;
+        }
+
+        h3:hover {
+            font-size: 1.5rem;
+        }
+
+    }
+
+    a:hover {
+        color: #7d9e65;
+    }
+}
+
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: center;
+    
 }

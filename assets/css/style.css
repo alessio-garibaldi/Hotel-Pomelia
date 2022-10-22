@@ -2,6 +2,11 @@
   font-family: "Mali", cursive;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-color: #fffeda;
 }
 
 @media all and (orientation: portrait) {
@@ -19,9 +24,12 @@
   }
   nav .logo-container {
     width: 18vw !important;
+    padding-bottom: 10vh !important;
   }
   nav .logo-container .logo {
-    width: 14vw !important;
+    z-index: 999;
+    width: 12vw !important;
+    min-width: 40px !important;
   }
   nav .navbar-list {
     display: none !important;
@@ -31,6 +39,7 @@
   }
   nav.smallscreen {
     background-color: rgba(201, 235, 194, 0.5568627451);
+    width: 100% !important;
     height: 2vh !important;
     display: block !important;
     border-bottom-left-radius: 15px !important;
@@ -52,6 +61,86 @@
   nav.smallscreen .navbar-list-small a:hover {
     color: #91b475;
   }
+  /* HERO SECTION */
+  #hero-section .hero-text {
+    width: 70vw !important;
+  }
+  #hero-section .hero-text h1 {
+    font-size: 4rem !important;
+  }
+  /* FAMIGLIA */
+  #famiglia {
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    background-image: url("../img/ragusa-small.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #famiglia .wrapper {
+    display: flex !important;
+    width: 100% !important;
+    height: 200vh !important;
+    flex-direction: column !important;
+  }
+  #famiglia .wrapper .mission {
+    display: flex;
+    height: 90vh;
+    width: 100% !important;
+    margin: 15vh 0px 5vh 0px !important;
+  }
+  #famiglia .wrapper .mission p {
+    width: 40vw !important;
+  }
+  #famiglia .wrapper .mission img {
+    height: 50vh;
+    width: 40vw;
+  }
+  #famiglia .wrapper .chi-siamo {
+    height: 80vh;
+    width: 100% !important;
+  }
+  #famiglia .wrapper .chi-siamo img {
+    height: 50vh;
+    width: 40vw;
+  }
+  #famiglia .wrapper .chi-siamo p {
+    width: 40vw !important;
+  }
+  #famiglia .rooms-ahead {
+    margin: 10vh auto 10vh auto;
+    padding-bottom: 20vh;
+  }
+  /* CAMERE */
+  #camere .struttura,
+#camere .biancheria {
+    padding-top: 0vh !important;
+    width: 90vw;
+  }
+  #camere .camera {
+    width: 90vw !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+  #camere .camera img {
+    width: 60vw !important;
+    margin-bottom: 2vh;
+  }
+  #camere .camera div {
+    width: 60vw !important;
+  }
+  #camere .camera div h3 {
+    text-align: center;
+    margin-bottom: 2vh;
+  }
+  #camere .camera div p {
+    width: 100%;
+  }
+  #camere .camera.doppia {
+    flex-direction: column-reverse !important;
+    text-align: justify !important;
+  }
 }
 /* MAIN PAGE */
 #main-page {
@@ -61,12 +150,11 @@
   background-size: cover;
   /* HEADER */
   /* HERO SECTION */
-  /* FAMIGLIA */
 }
 #main-page header {
-  position: fixed;
+  position: fixed !important;
   z-index: 99;
-  width: 50%;
+  width: 50% !important;
   height: 10vh;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -124,9 +212,12 @@
   width: 13vw;
   padding-left: 2vw;
   padding-top: 2vh;
+  padding-bottom: 12vh;
 }
 #main-page nav .logo-container .logo {
-  width: 7vw;
+  width: 6vw;
+  min-width: 80px;
+  position: fixed;
 }
 #main-page nav .navbar-list {
   padding-top: 15vh;
@@ -165,7 +256,7 @@
 #main-page #hero-section .hero-text {
   padding: 3vh 5vw 5vh 5vw;
   border-radius: 25px;
-  width: 40%;
+  width: 40vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -198,29 +289,221 @@
   background-color: rgba(229, 247, 170, 0.768627451);
   color: #435435;
 }
-#main-page #famiglia {
+
+/* FAMIGLIA */
+#famiglia {
   width: 100%;
-  height: 300px !important;
-  background: #000;
+  height: 120vh;
+  background-image: url("../img/ragusa.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-#main-page #famiglia .wrapper {
+#famiglia .wrapper {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  height: 90vh;
+  margin-top: 10vh;
 }
-#main-page #famiglia .wrapper .mission {
-  float: left;
-  width: 50%;
-  height: 100vh;
+#famiglia .wrapper .mission {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-#main-page #famiglia .wrapper .mission p {
-  height: 50vh;
+#famiglia .wrapper .mission p {
+  text-align: end;
+  margin: 0 15px;
+  width: 15vw;
+  color: #435435;
+  font-weight: 600;
+  font-size: 1.1rem;
 }
-#main-page #famiglia .wrapper .chi-siamo {
-  background-color: #fff;
-  float: right;
-  width: 50%;
-  height: 100vh;
+#famiglia .wrapper .mission img {
+  height: 60vh;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
-#main-page #famiglia .wrapper .chi-siamo p {
-  height: 50vh;
+#famiglia .wrapper .chi-siamo {
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#famiglia .wrapper .chi-siamo img {
+  height: 60vh;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+#famiglia .wrapper .chi-siamo p {
+  width: 15vw;
+  margin: 0 15px;
+  color: #435435;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+#famiglia .benefit {
+  width: 80vw;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10vh;
+  color: #435435;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+#famiglia .benefit a {
+  text-decoration: none;
+  color: #435435;
+}
+#famiglia .benefit a:hover {
+  color: #7d9e65;
+}
+#famiglia .rooms-ahead {
+  display: flex;
+  justify-content: center;
+}
+#famiglia .rooms-ahead a {
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(128, 209, 136, 0.7725490196);
+  color: #E5F7AA;
+  padding: 0.5vh 2.8vh;
+  text-decoration: none;
+  font-weight: 600;
+}
+#famiglia .rooms-ahead a:hover {
+  background-color: rgba(229, 247, 170, 0.768627451);
+  color: #435435;
+}
+
+/* CAMERE */
+#camere {
+  background-image: url("../img/lemon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#camere .struttura,
+#camere .biancheria {
+  width: 80vw;
+  text-align: center;
+  margin: auto;
+  margin-top: 10vh;
+  padding-top: 10vh;
+  color: #435435;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+#camere .biancheria {
+  padding-bottom: 10vh;
+}
+#camere .camera {
+  width: 70vw;
+  display: flex;
+  margin-top: 20vh;
+  align-items: center;
+}
+#camere .camera img {
+  width: 30vw;
+  border-radius: 15px;
+}
+#camere .camera div {
+  width: 30vw;
+  padding-left: 2vw;
+  color: #435435;
+}
+#camere .camera.doppia {
+  text-align: end;
+}
+#camere .camera.doppia div {
+  padding-right: 2vw;
+}
+
+.servizi-ahead {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8vh;
+}
+.servizi-ahead a {
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(128, 209, 136, 0.7725490196);
+  color: #E5F7AA;
+  padding: 0.5vh 2.8vh;
+  text-decoration: none;
+  font-weight: 600;
+}
+.servizi-ahead a:hover {
+  background-color: rgba(229, 247, 170, 0.768627451);
+  color: #435435;
+}
+
+/* SERVIZI */
+#servizi .intro-servizi {
+  text-align: center;
+  padding-top: 15vh;
+  color: #435435;
+}
+#servizi .container-servizi {
+  margin-top: 10vh;
+  width: 100%;
+  height: 70vh !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+#servizi .container-servizi div {
+  width: 20vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15vh;
+  color: #435435;
+}
+#servizi .container-servizi div img {
+  width: 90%;
+  border-radius: 15px;
+}
+#servizi .container-servizi div h4 {
+  width: 90%;
+  padding-top: 2vh;
+  text-align: center;
+}
+
+#final-call-to-action {
+  text-align: center;
+}
+#final-call-to-action a {
+  text-decoration: none;
+  color: #435435;
+}
+#final-call-to-action a h2 {
+  padding-bottom: 3vh;
+  font-size: 1.5rem;
+}
+#final-call-to-action a h3 {
+  padding-bottom: 5vh;
+  font-size: 1.3rem;
+}
+#final-call-to-action a h2:hover {
+  font-size: 1.7rem;
+}
+#final-call-to-action a h3:hover {
+  font-size: 1.5rem;
+}
+#final-call-to-action a:hover {
+  color: #7d9e65;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
