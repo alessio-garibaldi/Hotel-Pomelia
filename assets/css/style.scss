@@ -1,0 +1,284 @@
+* {
+    font-family: 'Mali', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+// body {
+//     background-color: #feffdd;
+// }
+
+@media all and (orientation: portrait) {
+    header {
+        .social-icons {
+            display:none !important;
+        }
+
+        .call-to-action {
+            margin: auto !important;
+        }
+    }
+
+    nav {   
+        height: 11vh !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        box-shadow: none !important;
+
+        .logo-container {
+            width: 18vw !important;
+            
+            .logo {
+                width: 14vw !important;
+            }
+        }
+
+        .navbar-list {
+        display: none !important;
+        }
+
+        .certificate {
+            width: 18vw !important;
+        }
+    }
+
+    nav.smallscreen {
+        background-color: #c9ebc28e;
+        height: 2vh !important;
+        display: block !important;
+        border-bottom-left-radius: 15px !important;
+        border-bottom-right-radius: 15px !important;
+        box-shadow: 
+        0px 1px 0px #E5F7AA !important;
+        
+        .navbar-list-small {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+            margin-bottom: 1vh !important;
+            font-weight: bold;
+
+            a {
+                color: #435435;
+                text-decoration: none;
+                font-size: 1rem;
+                
+            }
+
+            a:hover {
+                color: #91b475;
+            }
+
+        }
+    }
+
+}
+    
+
+
+/* MAIN PAGE */
+
+#main-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+
+    /* HEADER */
+
+    header {
+
+        position: fixed;
+        z-index: 99;
+        width: 50%;
+        height: 10vh;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin: 0 25%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #78582093;
+        box-shadow: 
+        0 0 50px #F2BF55;
+
+        .social-icons {
+            width: fit-content;
+
+            img {
+                width: 5vw;
+                max-width: 45px;
+                margin-left: 3vh;
+            }
+        }
+
+        .call-to-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 3vh;    
+
+            a {
+                text-align: center;
+                border-radius: 15px;
+                background-color: #80D188;
+                color: #E5F7AA;
+                height: 75%;
+                padding: 0.5vh 2.8vh;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            a:hover {
+                background-color:#E5F7AA;
+                color: #80D188;
+            }
+        }
+    }
+
+    nav {
+        position: relative;
+        background-color: #93c961c1;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        padding-bottom: 2vh;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        width: 100%;
+        height: 17vh;
+        box-shadow: 
+        3px 3px 15px #E5F7AA;
+
+        .logo-container {
+            width: 13vw;
+            padding-left: 2vw;
+            padding-top: 2vh;
+
+            .logo {
+                width: 7vw;
+            }
+        }
+
+        .navbar-list {
+            padding-top: 15vh;
+            display: flex;
+            width: 50vw;
+            justify-content: space-between;
+            list-style-type: none;
+            margin-bottom: 1vh;
+
+            a {
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: #435435;
+                font-weight: 600;
+            }
+
+            a:hover {
+                color: #E5F7AA;
+            }
+        }
+
+        .certificate {
+            width: 13vw;
+            padding-right: 2vw;
+            padding-top: 2vh;
+        }
+    }
+
+    nav.smallscreen {
+        display: none;
+    }
+
+
+
+    /* HERO SECTION */
+
+    #hero-section {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color: #E5F7AA;
+
+        .hero-text {
+            padding: 3vh 5vw 5vh 5vw;
+            border-radius: 25px;
+            width: 40%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #5d754995;
+            backdrop-filter: blur(3px);
+
+            h1 {
+                font-size: 5rem;
+                text-shadow: 
+                0 0 7px #F2BF55;
+            }
+        }
+    }
+
+    .go-ahead {
+
+        display: flex;
+        justify-content: center;
+        
+        a {
+            text-align: center;
+            border-radius: 15px;
+            background-color: #80d188c5;
+            color: #E5F7AA;
+            padding: 0.5vh 2.8vh;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            background-color:#e5f7aac4;
+            color: #435435;
+        }
+    }
+
+
+
+    /* FAMIGLIA */
+
+    #famiglia {
+        width: 100%;
+        height: 300px !important;
+        background: #000;
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            .mission {
+                float: left;
+                width: 50%;
+                height: 100vh;
+
+                p {
+                    height: 50vh;
+                }
+            }
+
+            .chi-siamo {
+                background-color: #fff;
+                float: right;
+                width: 50%;
+                height: 100vh;
+
+                p {
+                    height: 50vh;
+                }
+            }
+        }
+    }
+
+}
