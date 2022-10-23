@@ -9,6 +9,25 @@ body {
     background-color: #fffeda;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #E5F7AA; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to bottom, #7d9e65, #c9ffa2, #7d9e65 ) ;
+    border-radius: 15px; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(to bottom, #5f774c, #82a26a, #5f774c ) ;
+}
+
 @media all and (orientation: portrait) {
     header {
         .social-icons {
