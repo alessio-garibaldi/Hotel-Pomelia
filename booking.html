@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/colors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+    <title>Hotel Pomelia - Eco Hotel</title>
+</head>
+<body>
+
+
+
+    <!-- HOMEPAGE -->
+
+    <main id="main-page" class="booking-page">
+
+
+        <!-- HEADER -->
+        
+        <header>
+
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="facebook icon"></a>
+                <a href="https://www.instagram.com/"><img src="./assets/img/instagram.png" alt="instagram icon"></a>
+                <a href="https://twitter.com/"><img src="./assets/img/twitter.png" alt="twitter icon"></a>
+            </div>
+
+            <div class="call-to-action">
+                <a href="./contacts.html">Contattaci</a>
+            </div>
+
+        </header>
+
+        <nav>
+            <div class="logo-container">
+                <a href="/index.html#main-page"><img class="logo" src="./assets/img/logo.png" alt="Logo Hotel Pomelia"></a>
+            </div>
+
+            <ul class="navbar-list">
+                <li><a href="/index.html#famiglia">Famiglia</a></li>
+                <li><a href="/index.html#camere">Camere</a></li>
+                <li><a href="/index.html#servizi">Servizi</a></li>
+            </ul>
+
+            <div>
+                <img class="certificate" src="./assets/img/b-corporate.png" alt="B-Corporate">
+            </div>    
+        
+        </nav>
+
+        <nav class="smallscreen">
+            <ul class="navbar-list-small">
+                <li><a href="/index.html#famiglia">Famiglia</a></li>
+                <li><a href="/index.html#camere">Camere</a></li>
+                <li><a href="/index.html#servizi">Servizi</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- FORM PRENOTAZIONE -->
+
+        <form id="booking-box">
+
+            <div class="row">
+                <div class="col">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" value="" placeholder="Il tuo Nome" required>
+                </div>
+                <div class="col">
+                    <label for="surname">Cognome</label>
+                    <input type="text" name="surname" value="" placeholder="Il tuo Cognome" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" value="" placeholder="La tua Email" required>
+                </div>
+                <div class="col">
+                    <label for="your_tel">Cellulare</label>
+                    <input type="tel" name="your_tel" value="" placeholder="Il tuo Cellulare" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col date">
+                    <label for="name">Data di Arrivo</label>
+                </div>
+                <div class="col">
+                    <input type="date" name="arrival" value="" placeholder="Quando arrivi?" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col date">
+                    <label for="name">Data di Partenza</label>
+                </div>
+                <div class="col">
+                    <input type="date" name="departure" value="" placeholder="Quando riparti?" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <select name="scelta-camera" id="scelta-camera" required>
+                    <option value="">Tipologia di Camera</option>
+                    <option value="single-standard">Camera Singola Standard</option>
+                    <option value="single-deluxe">Camera Singola Deluxe</option>
+                    <option value="double-standard">Camera Doppia Standard</option>
+                    <option value="double-deluxe">Camera Doppia Deluxe</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <button type="submit" form="booking-box" value="Submit">Submit</button>
+            </div>
+            
+
+        </form>
+    </main>
+</body>
