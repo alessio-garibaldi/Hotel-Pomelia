@@ -225,12 +225,33 @@ body {
                     label, input {
                         text-align: center !important;
                     }
-
                 }
 
                 .col-date {
                     align-items: center !important;
                 }
+
+                button {
+                    margin: 2vh auto !important;
+                }
+            }
+        }
+    }
+
+    #main-page.sorry-page {
+
+        min-height: 100vh !important;
+        height: fit-content !important;
+        padding-bottom: 5vh;
+
+        .sorry-text {
+
+            h1 {
+                font-size: 3rem !important;
+            }
+
+            h2 {
+                font-size: 2rem !important;
             }
         }
     }
@@ -817,7 +838,7 @@ footer {
                 }
             }
 
-            select, button {
+            select {
                 background-color: #fbfac2;
                 border-radius: 10px;
                 padding: 5px;
@@ -827,10 +848,19 @@ footer {
 
             }
             
-            button:hover {
+            button {
+                border-radius: 10px;
+                padding: 5px;
                 background-color: #80d188;
                 color:#E5F7AA;
                 border: 3px solid #E5F7AA;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #fbfac2;
+                color: #80d188;
+                border: 3px solid #80D188;
             }
 
             .col.date {
@@ -839,6 +869,86 @@ footer {
 
         }
     }
+}
+
+
+
+/* SORRY PAGE */
+
+#main-page.sorry-page {
+    background-image: url("../img/room3.jpg") !important;
+    min-height: fit-content;
+
+    nav {
+        background-color: #dcf783c1;
+
+        .navbar-sorry {
+            a:hover {
+                color: #91b475;
+            }
+        }
+    }
+
+
+    .sorry-text {
+        background-color: #e5f7aac1;
+        text-align: center;
+        padding: 10px;
+        width: fit-content;
+        max-width: 85vw;
+        margin: 20vh auto;
+        border-radius: 15px;
+        color:#435435;
+
+        h1 {
+            font-weight: 700;
+            font-size: 4rem;
+            padding: 3vh 5vw 2vh 5vw;
+        }
+
+        h2 {
+            font-weight: 600;
+            font-size: 2rem;
+            padding-bottom: 2vh;
+            color:#5a7149;
+        }
+
+        h3 {
+            font-weight: 400;
+            font-size: 1.5rem;
+            padding-bottom: 3vh;
+
+        }
+
+        .call-to-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 3vh;    
+
+            a {
+                text-align: center;
+                border-radius: 15px;
+                background-color: #80D188;
+                color: #E5F7AA;
+                height: 75%;
+                padding: 0.5vh 2.8vh;
+                text-decoration: none;
+                font-weight: 600;
+            }
+
+            a:hover {
+                background-color:#E5F7AA;
+                color: #80D188;
+            }
+        }
+    }
+}
+
+.single-page {
+
+    padding-top: 0vh !important;
+    
 }
 
 

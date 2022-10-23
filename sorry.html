@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-    <title>Hotel Pomelia - Prenota</title>
+    <title>Hotel Pomelia - Spiacenti!</title>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 
     <!-- HOMEPAGE -->
 
-    <main id="main-page" class="booking-page">
+    <main id="main-page" class="sorry-page">
 
 
         <!-- HEADER -->
@@ -42,7 +42,7 @@
                 <a href="/index.html#main-page"><img class="logo" src="./assets/img/logo.png" alt="Logo Hotel Pomelia"></a>
             </div>
 
-            <ul class="navbar-list">
+            <ul class="navbar-list navbar-sorry">
                 <li><a href="/index.html#famiglia">Famiglia</a></li>
                 <li><a href="/index.html#camere">Camere</a></li>
                 <li><a href="/index.html#servizi">Servizi</a></li>
@@ -62,70 +62,15 @@
             </ul>
         </nav>
 
-
-        <!-- FORM PRENOTAZIONE -->
-
-        <form action="https://formsubmit.co/alessiogaribaldi2000@gmail.com" method="POST" id="booking-box">
-
-            <div class="row">
-                <div class="col">
-                    <label for="name">Nome</label>
-                    <input type="text" name="name" value="" placeholder="Il tuo Nome" required>
-                </div>
-                <div class="col">
-                    <label for="surname">Cognome</label>
-                    <input type="text" name="surname" value="" placeholder="Il tuo Cognome" required>
-                </div>
+        <section class="sorry-text">
+            <h1>Ci dispiace molto!</h1>
+            <h2>Non abbiamo camere disponibili al momento.</h2>
+            <h3>Che ne dici di trovare una soluzione insieme?</h3>
+            <div class="call-to-action">
+                <a href="./contacts.html">Contattaci</a>
             </div>
+        </section>
 
-            <div class="row">
-                <div class="col">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" value="" placeholder="La tua Email" required>
-                </div>
-                <div class="col">
-                    <label for="your_tel">Cellulare</label>
-                    <input type="tel" name="your_tel" value="" placeholder="Il tuo Cellulare" required>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col date">
-                    <label for="name">Data di Arrivo</label>
-                </div>
-                <div class="col">
-                    <input type="date" name="arrival" value="" placeholder="Quando arrivi?" required>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col date">
-                    <label for="name">Data di Partenza</label>
-                </div>
-                <div class="col">
-                    <input type="date" name="departure" value="" placeholder="Quando riparti?" required>
-                </div>
-            </div>
-
-            <div class="row">
-                <select name="scelta-camera" id="scelta-camera" required>
-                    <option value="">Tipologia di Camera</option>
-                    <option value="single-standard">Camera Singola Standard</option>
-                    <option value="single-deluxe">Camera Singola Deluxe</option>
-                    <option value="double-standard">Camera Doppia Standard</option>
-                    <option value="double-deluxe">Camera Doppia Deluxe</option>
-                </select>
-            </div>
-
-            <div class="row">
-                <button type="submit" form="booking-box" value="Submit">Controlla la Disponibilità</button>
-            </div>
-            
-            <input type="hidden" name="_next" value="https://https://alessio-garibaldi.github.io/Hotel-Pomelia/sorry.html">
-            
-            <input type="hidden" name="_captcha" value="false">
-        
-        </form>
     </main>
 
     <footer class="single-page">
@@ -166,4 +111,5 @@
         </div>
 
     </footer>
+
 </body>
