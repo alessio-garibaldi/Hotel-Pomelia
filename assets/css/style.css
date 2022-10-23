@@ -141,6 +141,15 @@ body {
     flex-direction: column-reverse !important;
     text-align: justify !important;
   }
+  footer .footer-social-icons {
+    width: 40%;
+    margin: 3vh auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .footer-social-icons img {
+    width: 8vw;
+  }
 }
 /* MAIN PAGE */
 #main-page {
@@ -303,7 +312,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 2px;
   height: 90vh;
-  margin-top: 10vh;
+  padding-top: 10vh;
 }
 #famiglia .wrapper .mission {
   display: flex;
@@ -444,17 +453,26 @@ body {
 }
 
 /* SERVIZI */
+#servizi {
+  background-image: url("../img/simbolo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
 #servizi .intro-servizi-container {
   padding-top: 15vh;
 }
 #servizi .intro-servizi-container .intro-servizi {
   text-align: center;
   color: #435435;
+  padding-bottom: 1vh;
 }
 #servizi .container-servizi {
   margin-top: 10vh;
   width: 100%;
-  height: 70vh !important;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -481,6 +499,7 @@ body {
 
 #final-call-to-action {
   text-align: center;
+  padding-top: 5vh;
 }
 #final-call-to-action a {
   text-decoration: none;
@@ -507,5 +526,41 @@ body {
 /* FOOTER */
 footer {
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 7vh;
+}
+footer .divider {
+  padding-bottom: 8vh;
+}
+footer .divider img {
+  height: 15px;
+  width: 98vw;
+}
+footer .footer-social-icons {
+  display: none;
+}
+footer .footer-content {
+  width: 100%;
+  padding-bottom: 5vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  color: #435435;
+}
+footer .footer-content .footer-text {
+  padding-left: 2vw;
+}
+footer .footer-content .footer-text h3 {
+  margin-bottom: 1vh;
+}
+footer .footer-content .footer-text p {
+  margin-bottom: 2vh;
+}
+footer .footer-content .footer-logo {
+  display: flex;
+  align-items: center;
   justify-content: center;
+}
+footer .footer-content .footer-logo img {
+  max-width: 80px;
 }/*# sourceMappingURL=style.css.map */
