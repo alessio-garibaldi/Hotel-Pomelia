@@ -444,9 +444,11 @@ body {
 }
 
 /* SERVIZI */
-#servizi .intro-servizi {
-  text-align: center;
+#servizi .intro-servizi-container {
   padding-top: 15vh;
+}
+#servizi .intro-servizi-container .intro-servizi {
+  text-align: center;
   color: #435435;
 }
 #servizi .container-servizi {

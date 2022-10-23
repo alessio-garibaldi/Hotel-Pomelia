@@ -571,11 +571,13 @@ body {
 /* SERVIZI */
 #servizi {
 
-    .intro-servizi {
-        text-align: center;
+    .intro-servizi-container {
         padding-top: 15vh;
-        color: #435435;
 
+        .intro-servizi {
+            text-align: center;
+            color: #435435;
+        }
     }
 
     .container-servizi{
