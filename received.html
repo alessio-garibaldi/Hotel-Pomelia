@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-    <title>Hotel Pomelia - Contattaci</title>
+    <title>Hotel Pomelia - Spiacenti!</title>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 
     <!-- HOMEPAGE -->
 
-    <main id="main-page" class="contacts-page">
+    <main id="main-page" class="sorry-page">
 
 
         <!-- HEADER -->
@@ -32,7 +32,7 @@
             </div>
 
             <div class="call-to-action">
-                <a href="./booking.html">Prenota ora</a>
+                <a href="./booking.html">Prenota Ora</a>
             </div>
 
         </header>
@@ -42,7 +42,7 @@
                 <a href="/index.html#main-page"><img class="logo" src="./assets/img/logo.png" alt="Logo Hotel Pomelia"></a>
             </div>
 
-            <ul class="navbar-list">
+            <ul class="navbar-list navbar-sorry">
                 <li><a href="/index.html#famiglia">Famiglia</a></li>
                 <li><a href="/index.html#camere">Camere</a></li>
                 <li><a href="/index.html#servizi">Servizi</a></li>
@@ -63,37 +63,20 @@
         </nav>
 
 
-        <!-- FORM -->
+        <!-- SORRY -->
 
-        <form action="https://formsubmit.co/alessiogaribaldi2000@gmail.com" method="POST" id="contact-box">
-
-            <div class="row">
-                <label for="name">Nome</label>
-                <input type="text" name="name" value="" placeholder="Il tuo Nome" required>
+        <section class="sorry-text received-text">
+            <h1>Messaggio inviato!</h1>
+            <h2>Ti risponderemo nel più breve tempo possibile.</h2>
+            <div class="call-to-action">
+                <a href="./index.html">Torna alla Home</a>
             </div>
+        </section>
 
-            <div class="row">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" value="" placeholder="La tua Email" required>
-            </div>
-            <div class="row">
-                    <label for="your_tel">Cellulare</label>
-                    <input type="tel" name="your_tel" value="" placeholder="Il tuo Cellulare" required>
-            </div>
-            
-
-            <textarea name="message" id="msg" rows="3" cols="60" required></textarea>
-
-            <div class="row">
-                <button type="submit" form="contact-box" value="Submit">Inviaci un Messaggio</button>
-            </div>
-            
-            <input type="hidden" name="_next" value="https://alessio-garibaldi.github.io/Hotel-Pomelia/received.html">
-            
-            <input type="hidden" name="_captcha" value="false">
-        
-        </form>
     </main>
+
+
+    <!-- FOOTER -->
 
     <footer class="single-page">
 
@@ -133,4 +116,5 @@
         </div>
 
     </footer>
+
 </body>
