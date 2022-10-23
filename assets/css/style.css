@@ -648,6 +648,7 @@ footer .footer-content .footer-logo img {
 
 /* BOOKING PAGE */
 #main-page.booking-page {
+  min-height: 110vh;
   background-image: url("../img/door.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -658,8 +659,8 @@ footer .footer-content .footer-logo img {
 #main-page.booking-page #booking-box {
   background-color: rgba(229, 247, 170, 0.5882352941);
   border-radius: 15px;
-  margin: 10vh 50vw 10vh 15vw;
-  width: 35vw;
+  margin: 10vh 50vw 0vh 15vw;
+  width: 40vw;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -671,7 +672,7 @@ footer .footer-content .footer-logo img {
   font-weight: 600;
 }
 #main-page.booking-page #booking-box .row {
-  width: 35vw;
+  width: 38vw;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 2vh;
@@ -767,6 +768,14 @@ footer .footer-content .footer-logo img {
   font-size: 1.5rem;
   padding-bottom: 3vh;
 }
+#main-page.sorry-page .sorry-text h4, #main-page.sorry-page .received-text h4 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+#main-page.sorry-page .sorry-text h5, #main-page.sorry-page .received-text h5 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
 #main-page.sorry-page .sorry-text .call-to-action, #main-page.sorry-page .received-text .call-to-action {
   display: flex;
   align-items: center;
@@ -806,7 +815,7 @@ footer .footer-content .footer-logo img {
   background-color: rgba(229, 247, 170, 0.7450980392) !important;
   border-radius: 15px;
   width: 50vw;
-  margin: 20vh auto;
+  margin: 15vh auto;
   display: flex;
   flex-direction: column;
   align-items: center;
