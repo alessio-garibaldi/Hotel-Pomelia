@@ -60,7 +60,7 @@ body {
     font-size: 1rem;
   }
   nav.smallscreen .navbar-list-small a:hover {
-    color: #91b475;
+    color: #E5F7AA;
   }
   /* HERO SECTION */
   #hero-section .hero-text {
@@ -142,13 +142,16 @@ body {
     flex-direction: column-reverse !important;
     text-align: justify !important;
   }
-  footer .footer-social-icons {
+  .main-footer .divider, .single-page .divider {
+    padding-bottom: 1vh !important;
+  }
+  .main-footer .footer-social-icons, .single-page .footer-social-icons {
     width: 40%;
     margin: 3vh auto;
     display: flex;
     justify-content: space-around;
   }
-  footer .footer-social-icons img {
+  .main-footer .footer-social-icons img, .single-page .footer-social-icons img {
     width: 8vw;
   }
   #main-page.booking-page {
@@ -753,4 +756,9 @@ footer .footer-content .footer-logo img {
 
 .single-page {
   padding-top: 0vh !important;
+}
+
+/* CONTACTS PAGE */
+#main-page.contacts-page {
+  background-image: url("../img/contacts.jpg");
 }/*# sourceMappingURL=style.css.map */

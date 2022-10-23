@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mali:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
-    <title>Hotel Pomelia - Spiacenti!</title>
+    <title>Hotel Pomelia - Contattaci</title>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 
     <!-- HOMEPAGE -->
 
-    <main id="main-page" class="sorry-page">
+    <main id="main-page" class="contacts-page">
 
 
         <!-- HEADER -->
@@ -32,7 +32,7 @@
             </div>
 
             <div class="call-to-action">
-                <a href="./contacts.html">Contattaci</a>
+                <a href="./booking.html">Prenota ora</a>
             </div>
 
         </header>
@@ -42,7 +42,7 @@
                 <a href="/index.html#main-page"><img class="logo" src="./assets/img/logo.png" alt="Logo Hotel Pomelia"></a>
             </div>
 
-            <ul class="navbar-list navbar-sorry">
+            <ul class="navbar-list">
                 <li><a href="/index.html#famiglia">Famiglia</a></li>
                 <li><a href="/index.html#camere">Camere</a></li>
                 <li><a href="/index.html#servizi">Servizi</a></li>
@@ -63,59 +63,38 @@
         </nav>
 
 
-        <!-- SORRY -->
+        <!-- FORM -->
 
-        <section class="sorry-text">
-            <h1>Ci dispiace molto!</h1>
-            <h2>Non abbiamo camere disponibili al momento.</h2>
-            <h3>Che ne dici di trovare una soluzione insieme?</h3>
-            <div class="call-to-action">
-                <a href="./contacts.html">Contattaci</a>
+        <form action="https://formsubmit.co/alessiogaribaldi2000@gmail.com" method="POST" id="contact-box">
+
+            <div class="row">
+                <div class="col">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" value="" placeholder="Il tuo Nome" required>
+                </div>
             </div>
-        </section>
 
+            <div class="row">
+                <div class="col">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" value="" placeholder="La tua Email" required>
+                </div>
+                <div class="col">
+                    <label for="your_tel">Cellulare</label>
+                    <input type="tel" name="your_tel" value="" placeholder="Il tuo Cellulare" required>
+                </div>
+            </div>
+
+            <textarea name="message" id="msg" required></textarea>
+
+            <div class="row">
+                <button type="submit" form="contact-box" value="Submit">Inviaci un Messaggio</button>
+            </div>
+            
+            <input type="hidden" name="_next" value="https://alessio-garibaldi.github.io/Hotel-Pomelia/sorry.html">
+            
+            <input type="hidden" name="_captcha" value="false">
+        
+        </form>
     </main>
-
-
-    <!-- FOOTER -->
-
-    <footer class="single-page">
-
-        <div class="divider">
-            <img src="./assets/img/border.png" alt="Bordo con Stile Siciliano">
-        </div>
-
-        <div class="footer-social-icons">
-            <a href="https://www.facebook.com/"><img src="./assets/img/facebook.png" alt="facebook icon"></a>
-            <a href="https://www.instagram.com/"><img src="./assets/img/instagram.png" alt="instagram icon"></a>
-            <a href="https://twitter.com/"><img src="./assets/img/twitter.png" alt="twitter icon"></a>
-        </div>
-
-        <div class="footer-content">
-
-            <div class="footer-text">
-                <h3>
-                    Hotel Pomelia
-                </h3>
-
-                <p>
-                    Immerso in un paesaggio naturale di straordinaria bellezza, tutta da preservare.
-                </p>
-
-                <p>
-                    Hotel Pomelia, Ragusa (97100), Sicilia
-                </p>
-
-                <p>
-                    +39 1234 56789
-                </p>
-            </div>
-
-            <div class="footer-logo">
-                <a href="https://www.societabenefit.net/cosa-sono-le-societa-benefit/"><img src="./assets/img/b-corporate-logo.png" alt="Logo B-Corporate"></a>
-            </div>
-        </div>
-
-    </footer>
-
 </body>
