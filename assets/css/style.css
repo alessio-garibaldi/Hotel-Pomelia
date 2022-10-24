@@ -172,14 +172,11 @@ body {
     width: 8vw;
   }
   #main-page.booking-page {
-    height: -webkit-fit-content !important;
-    height: -moz-fit-content !important;
-    height: fit-content !important;
-    min-height: 120vh !important;
+    height: 140vh !important;
   }
   #main-page.booking-page #booking-box {
     width: 80vw !important;
-    margin: 10vh auto !important;
+    margin: 15vh auto !important;
   }
   #main-page.booking-page #booking-box .row {
     flex-direction: column !important;
@@ -209,10 +206,13 @@ body {
     padding-bottom: 5vh;
   }
   #main-page.sorry-page .sorry-text h1 {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
   }
   #main-page.sorry-page .sorry-text h2 {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
+  }
+  #main-page.sorry-page .sorry-text h3 {
+    font-size: 1.1rem !important;
   }
   #main-page.contacts-page #contact-box {
     width: 80vw !important;
@@ -357,6 +357,9 @@ body {
 #main-page #hero-section .hero-text h1 {
   font-size: 5rem;
   text-shadow: 0 0 7px #F2BF55;
+}
+#main-page #hero-section .hero-text h3, #main-page #hero-section .hero-text h4 {
+  text-align: center;
 }
 #main-page .go-ahead {
   display: flex;
@@ -648,6 +651,9 @@ footer .footer-content .footer-logo img {
 
 /* BOOKING PAGE */
 #main-page.booking-page {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   min-height: 110vh;
   background-image: url("../img/door.jpg");
   background-repeat: no-repeat;
@@ -670,6 +676,9 @@ footer .footer-content .footer-logo img {
   justify-content: center;
   color: #435435;
   font-weight: 600;
+}
+#main-page.booking-page #booking-box h3, #main-page.booking-page #booking-box h4 {
+  text-align: center;
 }
 #main-page.booking-page #booking-box .row {
   width: 38vw;
@@ -821,6 +830,9 @@ footer .footer-content .footer-logo img {
   align-items: center;
   color: #435435;
   font-weight: 600;
+}
+#main-page.contacts-page #contact-box h3, #main-page.contacts-page #contact-box h4 {
+  text-align: center;
 }
 #main-page.contacts-page #contact-box .row {
   width: 40vw;

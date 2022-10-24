@@ -209,6 +209,8 @@ body {
 
     .main-footer, .single-page {
 
+        
+
         .divider {
             padding-bottom: 1vh !important;
         }
@@ -226,12 +228,11 @@ body {
     }
 
     #main-page.booking-page {
-        height: fit-content !important;
-        min-height: 120vh !important;
+        height: 140vh !important;
     
         #booking-box {
             width: 80vw !important;
-            margin: 10vh auto !important;
+            margin: 15vh auto !important;
             
             .row {
                 flex-direction: column !important;
@@ -270,11 +271,15 @@ body {
         .sorry-text {
 
             h1 {
-                font-size: 3rem !important;
+                font-size: 2rem !important;
             }
 
             h2 {
-                font-size: 2rem !important;
+                font-size: 1.5rem !important;
+            }
+
+            h3 {
+                font-size: 1.1rem !important;
             }
         }
     }
@@ -460,6 +465,10 @@ body {
                 font-size: 5rem;
                 text-shadow: 
                 0 0 7px #F2BF55;
+            }
+
+            h3, h4 {
+                text-align: center;
             }
 
         }
@@ -830,6 +839,7 @@ footer {
 /* BOOKING PAGE */
 
 #main-page.booking-page {
+    height: max-content;
     min-height: 110vh;
     background-image: url("../img/door.jpg");
     background-repeat: no-repeat;
@@ -850,6 +860,10 @@ footer {
         justify-content: center;
         color:#435435;
         font-weight: 600;
+
+        h3,h4 {
+            text-align: center;
+        }
 
         .row {
             width: 38vw;
@@ -1032,6 +1046,10 @@ footer {
         align-items: center;
         color:#435435;
         font-weight: 600;
+
+        h3, h4 {
+            text-align: center;
+        }
 
         .row {
             width: 40vw;
